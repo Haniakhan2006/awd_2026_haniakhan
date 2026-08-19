@@ -1,0 +1,8 @@
+{
+  "name": "AI Crop Doctor+",
+  "description": "A precision agriculture platform using Gemini AI for crop disease detection, treatment strategies, and localized weather insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

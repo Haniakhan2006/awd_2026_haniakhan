@@ -1,0 +1,53 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Allow read/write for all collections to support standard authentication,
+    // quick access bypass mode, and seamless offline data synchronization.
+    
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    match /test/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /reports/{reportId} {
+      allow read, write: if true;
+    }
+
+    match /diseases/{diseaseId} {
+      allow read, write: if true;
+    }
+
+    match /chats/{chatId} {
+      allow read, write: if true;
+    }
+
+    match /calendar/{calendarId} {
+      allow read, write: if true;
+    }
+
+    match /notifications/{notificationId} {
+      allow read, write: if true;
+    }
+
+    match /farmRecords/{recordId} {
+      allow read, write: if true;
+    }
+
+    match /community/{postId} {
+      allow read, write: if true;
+
+      match /comments/{commentId} {
+        allow read, write: if true;
+      }
+    }
+  }
+}
