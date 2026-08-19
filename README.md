@@ -7,6 +7,8 @@ AI Crop Doctor+ is an intelligent agriculture-focused application designed to he
 The system combines **Artificial Intelligence, Computer Vision, and a user-friendly web interface** to provide fast and accessible crop health assistance.
 
 ---
+## Live Demo Link :
+https://awd-2026-haniakhan-6blx5vm8v-haniakhan2007.vercel.app/
 
 ## 🚀 Features
 
